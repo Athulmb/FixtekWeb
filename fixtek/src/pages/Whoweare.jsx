@@ -3,7 +3,7 @@ import Footersection from "../Components/common/Footersection";
 
 function Whoweare() {
   return (
-    <div className="mt-20 space-y-20">
+    <div className="mt-12 space-y-20">
 
       <div className="flex justify-center px-2">
   <div className="flex flex-col md:flex-row justify-between items-start bg-[#F9F3EF] rounded-xl w-full md:w-[1244px] h-auto md:h-[552px] shadow-sm p-6 md:p-8">
@@ -74,10 +74,10 @@ function Whoweare() {
     </p>
 
     {/* ======= MAIN CONTAINER ======= */}
-    <div className="relative flex justify-center items-center w-full max-w-[1224px] mx-auto mt-10">
+    <div className="relative flex justify-center items-center w-full max-w-[1224px] mx-auto mt-10 min-h-[400px] md:min-h-[500px]">
 
       {/* ======= LEFT SIDE IMAGES ======= */}
-      <div className="flex flex-row md:flex-col gap-6 mt-4 md:mt-10">
+      <div className="hidden md:flex flex-col gap-6 mt-10">
         <div className="absolute bottom-[80%] left-[15%] bg-white rounded-2xl shadow-md hover:shadow-lg transition-all flex flex-col items-center text-center w-[196px] h-[128px]">
           <img
             src="Figure (5).png"
@@ -97,7 +97,7 @@ function Whoweare() {
         </div>
 
         <div className="absolute top-[40%] left-[3%] w-[144px] h-[154px]">
-          <img src="image (3).png" alt="Analytics" className="w-full h-full object-contain rounded-xl" />
+          <img src="Container.png" alt="Analytics" className="w-full h-full object-contain rounded-xl" />
         </div>
 
         <div className="absolute top-[5%] left-[3%] w-[144px] h-[144px]">
@@ -105,8 +105,29 @@ function Whoweare() {
         </div>
       </div>
 
+      {/* Mobile Left Side Cards */}
+      <div className="md:hidden absolute top-0 left-0 w-full flex flex-col gap-3 px-2">
+        <div className="bg-white rounded-2xl shadow-md flex flex-col items-center text-center w-[140px] h-[90px] mx-auto">
+          <img
+            src="Figure (5).png"
+            alt="Families"
+            className="w-[138px] h-[65px] bg-[#FFC0C0] rounded-t-2xl object-cover"
+          />
+          <p className="text-[10px] font-semibold text-gray-900 mt-1 font-manrope px-2">
+            Trusted by 6000+ Families
+          </p>
+        </div>
+
+        <div className="bg-white rounded-2xl shadow-sm flex flex-col items-center text-center w-[130px] h-[85px] mx-auto">
+          <img src="Figure (1).png" alt="Professionals" className="bg-[#FFFFFF] rounded-t-2xl object-cover w-full h-[50px]" />
+          <p className="text-[7px] font-semibold font-manrope text-[#18181B] py-1 px-2">
+            Professionally Trained For Home Cleaning
+          </p>
+        </div>
+      </div>
+
       {/* ======= PHONE IMAGE ======= */}
-      <div className="absolute left-[36%] bottom-[24%] w-[200px] h-[320px] md:w-[305px] md:h-[450px] z-10">
+      <div className="absolute left-1/2 transform -translate-x-1/2 bottom-[24%] md:left-[36%] md:transform-none md:bottom-[24%] w-[200px] h-[320px] md:w-[305px] md:h-[450px] z-10">
         <img
           src="iPhone 13 Pro (2).png"
           alt="Fixtek App"
@@ -115,7 +136,7 @@ function Whoweare() {
       </div>
 
       {/* ======= RIGHT SIDE IMAGES ======= */}
-      <div className="relative w-full md:w-[400px] h-[500px] mt-4 md:mt-10">
+      <div className="hidden md:block relative w-[400px] h-[500px] mt-10">
         <div className="absolute bottom-[80%] left-[95%] bg-white rounded-2xl shadow-md hover:shadow-lg transition-all flex flex-col items-center text-center w-[172px] h-[107px]">
           <img
             src="Figure (4).png"
@@ -135,9 +156,9 @@ function Whoweare() {
           />
         </div>
 
-        <div className="absolute bottom-[95%] left-[150%] w-[184px] h-[90px] hidden md:block">
+        <div className="absolute bottom-[95%] left-[150%] w-[184px] h-[90px]">
           <img
-            src="Vector (1).png"
+            src="whislist.png"
             alt="Rewards"
             className="w-[144px] h-[144px] object-contain rounded-xl"
           />
@@ -150,6 +171,31 @@ function Whoweare() {
             className="w-[200px] h-[90px] rounded-t-2xl object-cover"
           />
           <p className="text-[9px] font-semibold text-[#18181B] font-manrope mt-2 px-3">
+            Background Verified and Trusted Experts
+          </p>
+        </div>
+      </div>
+
+      {/* Mobile Right Side Cards */}
+      <div className="md:hidden absolute bottom-0 right-0 w-full flex flex-col gap-3 px-2">
+        <div className="bg-white rounded-2xl shadow-md flex flex-col items-center text-center w-[140px] h-[90px] ml-auto">
+          <img
+            src="Figure (4).png"
+            alt="Quality"
+            className="w-[138px] h-[65px] rounded-t-2xl bg-[#AFDEFF] object-cover"
+          />
+          <p className="text-[9px] font-manrope font-semibold text-gray-900 mt-1 px-2">
+            Quality You Can Trust
+          </p>
+        </div>
+
+        <div className="bg-white rounded-2xl shadow-md flex flex-col items-center text-center w-[150px] h-[90px] ml-auto">
+          <img
+            src="Figure.png"
+            alt="Background Verified"
+            className="w-[148px] h-[65px] rounded-t-2xl object-cover"
+          />
+          <p className="text-[8px] font-semibold text-[#18181B] font-manrope mt-1 px-2">
             Background Verified and Trusted Experts
           </p>
         </div>
