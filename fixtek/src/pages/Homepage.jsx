@@ -9,7 +9,7 @@ import Testimonials from "../Components/Home/Testimonials";
 import Footer from "../Components/common/Footersection";
 import WhyChooseFixtek from "../Components/Home/WhyChooseFixtek";
 
-export default function Homepage() {
+function Homepage() {
   return (
     <>
       <HeroSection />
@@ -22,6 +22,6 @@ export default function Homepage() {
     </>
   );
 }
-
+export default Homepage;
 
 
